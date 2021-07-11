@@ -18,6 +18,10 @@ while (fakeInvitations.length < 3) {
     
     // Creao una variabile con gli elementi randomizzati
     var randomFullName = randomName + " " + randomLastname;
-    console.log(randomFullName);
-
+    
+    if(!fakeInvitations.includes(randomFullName)) {
+        fakeInvitations.push(randomFullName)
+        console.log(randomFullName);
+    }
+    
 }
